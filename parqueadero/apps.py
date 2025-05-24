@@ -4,6 +4,7 @@ from django.apps import AppConfig
 class ParqueaderoConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'parqueadero'
+<<<<<<< HEAD
     
     def ready(self):
         from django.db.utils import OperationalError, ProgrammingError
@@ -18,3 +19,5 @@ class ParqueaderoConfig(AppConfig):
             pass
         except Exception as e:
             print(f"Error inesperado al crear celdas: {e}")
+=======
+>>>>>>> 8e9dc2bfcace5fa602bd7987f79fbddfa75f53f4
