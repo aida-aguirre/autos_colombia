@@ -8,11 +8,7 @@ def entrada_salida_vehiculo(request):
     if request.method == 'POST':
         print(request.POST)  # Bloque de depuración: imprime los datos enviados por el formulario
 
-<<<<<<< HEAD
         placa = request.POST.get('placa', '').upper()  # Convertimos a mayúsculas
-=======
-        placa = request.POST.get('placa')
->>>>>>> 8e9dc2bfcace5fa602bd7987f79fbddfa75f53f4
         if not placa:
             mensaje = "Por favor, ingrese una placa válida."
             return render(request, 'parqueadero/dashboard.html', {'mensaje': mensaje})
